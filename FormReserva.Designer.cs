@@ -29,31 +29,31 @@ namespace Clave1_Grupo1
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvUsuario = new System.Windows.Forms.DataGridView();
+            this.dgvReserva = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnAgregarR = new System.Windows.Forms.Button();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.paneldiseño1 = new System.Windows.Forms.Panel();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnEliminarR = new System.Windows.Forms.Button();
+            this.btnActualizarR = new System.Windows.Forms.Button();
             this.cbLocal = new System.Windows.Forms.ComboBox();
             this.dtpInicio = new System.Windows.Forms.DateTimePicker();
             this.dtpFin = new System.Windows.Forms.DateTimePicker();
             this.cbArtista = new System.Windows.Forms.ComboBox();
             this.cbUsuario = new System.Windows.Forms.ComboBox();
             this.txtCosto = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReserva)).BeginInit();
             this.panel1.SuspendLayout();
             this.paneldiseño1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvUsuario
+            // dgvReserva
             // 
-            this.dgvUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsuario.Location = new System.Drawing.Point(0, 0);
-            this.dgvUsuario.Name = "dgvUsuario";
-            this.dgvUsuario.Size = new System.Drawing.Size(581, 352);
-            this.dgvUsuario.TabIndex = 10;
+            this.dgvReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReserva.Location = new System.Drawing.Point(0, 0);
+            this.dgvReserva.Name = "dgvReserva";
+            this.dgvReserva.Size = new System.Drawing.Size(581, 352);
+            this.dgvReserva.TabIndex = 10;
             // 
             // panel1
             // 
@@ -64,29 +64,29 @@ namespace Clave1_Grupo1
             this.panel1.Controls.Add(this.dtpFin);
             this.panel1.Controls.Add(this.dtpInicio);
             this.panel1.Controls.Add(this.cbLocal);
-            this.panel1.Controls.Add(this.btnAgregar);
+            this.panel1.Controls.Add(this.btnAgregarR);
             this.panel1.Controls.Add(this.txtContraseña);
             this.panel1.Location = new System.Drawing.Point(580, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(220, 450);
             this.panel1.TabIndex = 8;
             // 
-            // btnAgregar
+            // btnAgregarR
             // 
-            this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAgregar.FlatAppearance.BorderColor = System.Drawing.Color.Firebrick;
-            this.btnAgregar.FlatAppearance.BorderSize = 0;
-            this.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
-            this.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
-            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnAgregar.Location = new System.Drawing.Point(0, 350);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(220, 50);
-            this.btnAgregar.TabIndex = 80;
-            this.btnAgregar.Text = "AGREGAR USUARIOS";
-            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregarR.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarR.FlatAppearance.BorderColor = System.Drawing.Color.Firebrick;
+            this.btnAgregarR.FlatAppearance.BorderSize = 0;
+            this.btnAgregarR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
+            this.btnAgregarR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
+            this.btnAgregarR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarR.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarR.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnAgregarR.Location = new System.Drawing.Point(0, 350);
+            this.btnAgregarR.Name = "btnAgregarR";
+            this.btnAgregarR.Size = new System.Drawing.Size(220, 50);
+            this.btnAgregarR.TabIndex = 80;
+            this.btnAgregarR.Text = "AGREGAR RESERVA";
+            this.btnAgregarR.UseVisualStyleBackColor = false;
             // 
             // txtContraseña
             // 
@@ -100,49 +100,49 @@ namespace Clave1_Grupo1
             // paneldiseño1
             // 
             this.paneldiseño1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
-            this.paneldiseño1.Controls.Add(this.btnEliminar);
-            this.paneldiseño1.Controls.Add(this.btnActualizar);
+            this.paneldiseño1.Controls.Add(this.btnEliminarR);
+            this.paneldiseño1.Controls.Add(this.btnActualizarR);
             this.paneldiseño1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.paneldiseño1.Location = new System.Drawing.Point(0, 350);
             this.paneldiseño1.Name = "paneldiseño1";
             this.paneldiseño1.Size = new System.Drawing.Size(800, 100);
             this.paneldiseño1.TabIndex = 9;
             // 
-            // btnEliminar
+            // btnEliminarR
             // 
-            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
-            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.Firebrick;
-            this.btnEliminar.FlatAppearance.BorderSize = 0;
-            this.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
-            this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
-            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnEliminar.Location = new System.Drawing.Point(126, 50);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(322, 50);
-            this.btnEliminar.TabIndex = 79;
-            this.btnEliminar.Text = "ELIMINAR USUARIOS";
-            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminarR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
+            this.btnEliminarR.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminarR.FlatAppearance.BorderColor = System.Drawing.Color.Firebrick;
+            this.btnEliminarR.FlatAppearance.BorderSize = 0;
+            this.btnEliminarR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
+            this.btnEliminarR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
+            this.btnEliminarR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarR.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarR.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnEliminarR.Location = new System.Drawing.Point(126, 50);
+            this.btnEliminarR.Name = "btnEliminarR";
+            this.btnEliminarR.Size = new System.Drawing.Size(322, 50);
+            this.btnEliminarR.TabIndex = 79;
+            this.btnEliminarR.Text = "ELIMINAR RESERVA";
+            this.btnEliminarR.UseVisualStyleBackColor = false;
             // 
-            // btnActualizar
+            // btnActualizarR
             // 
-            this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
-            this.btnActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnActualizar.FlatAppearance.BorderColor = System.Drawing.Color.Firebrick;
-            this.btnActualizar.FlatAppearance.BorderSize = 0;
-            this.btnActualizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
-            this.btnActualizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
-            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnActualizar.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnActualizar.Location = new System.Drawing.Point(126, 0);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(322, 50);
-            this.btnActualizar.TabIndex = 78;
-            this.btnActualizar.Text = "ACTUALIZAR USUARIOS";
-            this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizarR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
+            this.btnActualizarR.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnActualizarR.FlatAppearance.BorderColor = System.Drawing.Color.Firebrick;
+            this.btnActualizarR.FlatAppearance.BorderSize = 0;
+            this.btnActualizarR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
+            this.btnActualizarR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
+            this.btnActualizarR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizarR.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarR.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnActualizarR.Location = new System.Drawing.Point(126, 0);
+            this.btnActualizarR.Name = "btnActualizarR";
+            this.btnActualizarR.Size = new System.Drawing.Size(322, 50);
+            this.btnActualizarR.TabIndex = 78;
+            this.btnActualizarR.Text = "ACTUALIZAR RESERVA";
+            this.btnActualizarR.UseVisualStyleBackColor = false;
             // 
             // cbLocal
             // 
@@ -205,13 +205,13 @@ namespace Clave1_Grupo1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dgvUsuario);
+            this.Controls.Add(this.dgvReserva);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.paneldiseño1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormReserva";
             this.Text = "FormReserva";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReserva)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.paneldiseño1.ResumeLayout(false);
@@ -221,7 +221,7 @@ namespace Clave1_Grupo1
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvUsuario;
+        private System.Windows.Forms.DataGridView dgvReserva;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtCosto;
         private System.Windows.Forms.ComboBox cbUsuario;
@@ -229,10 +229,10 @@ namespace Clave1_Grupo1
         private System.Windows.Forms.DateTimePicker dtpFin;
         private System.Windows.Forms.DateTimePicker dtpInicio;
         private System.Windows.Forms.ComboBox cbLocal;
-        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnAgregarR;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.Panel paneldiseño1;
-        private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Button btnEliminarR;
+        private System.Windows.Forms.Button btnActualizarR;
     }
 }

@@ -29,7 +29,7 @@ namespace Clave1_Grupo1
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvUsuario = new System.Windows.Forms.DataGridView();
+            this.dgvLocales = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAgregarL = new System.Windows.Forms.Button();
             this.txtDireccion = new System.Windows.Forms.TextBox();
@@ -44,18 +44,18 @@ namespace Clave1_Grupo1
             this.cbSonido = new System.Windows.Forms.ComboBox();
             this.cbSillas = new System.Windows.Forms.ComboBox();
             this.cbTipo = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLocales)).BeginInit();
             this.panel1.SuspendLayout();
             this.paneldiseño1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvUsuario
+            // dgvLocales
             // 
-            this.dgvUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsuario.Location = new System.Drawing.Point(0, 0);
-            this.dgvUsuario.Name = "dgvUsuario";
-            this.dgvUsuario.Size = new System.Drawing.Size(581, 352);
-            this.dgvUsuario.TabIndex = 10;
+            this.dgvLocales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLocales.Location = new System.Drawing.Point(0, 0);
+            this.dgvLocales.Name = "dgvLocales";
+            this.dgvLocales.Size = new System.Drawing.Size(581, 352);
+            this.dgvLocales.TabIndex = 10;
             // 
             // panel1
             // 
@@ -231,13 +231,13 @@ namespace Clave1_Grupo1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dgvUsuario);
+            this.Controls.Add(this.dgvLocales);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.paneldiseño1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Locales";
             this.Text = "Locales";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLocales)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.paneldiseño1.ResumeLayout(false);
@@ -247,7 +247,7 @@ namespace Clave1_Grupo1
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvUsuario;
+        private System.Windows.Forms.DataGridView dgvLocales;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox cbTipo;
         private System.Windows.Forms.ComboBox cbSillas;
