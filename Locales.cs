@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Clave1_Grupo1
 {
-    public partial class Form1 : Form
+    public partial class Locales : Form
     {
-        public Form1()
+        public Locales()
         {
             InitializeComponent();
         }
