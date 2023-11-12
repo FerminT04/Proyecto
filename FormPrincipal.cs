@@ -24,13 +24,13 @@ namespace Clave1_Grupo1
 
         public void Abrirformhijo(object formhijo)
         {
-            if (this.paneVentanas.Controls.Count > 0)
-                this.paneVentanas.Controls.RemoveAt(0);
+            if (this.panel2.Controls.Count > 0)
+                this.panel2.Controls.RemoveAt(0);
             Form fh = formhijo as Form;
             fh.TopLevel = false;
             fh.Dock = DockStyle.Fill;
-            this.paneVentanas.Controls.Add(fh);
-            this.paneVentanas.Tag = fh;
+            this.panel2.Controls.Add(fh);
+            this.panel2.Tag = fh;
             fh.Show();
         }
 
@@ -47,6 +47,16 @@ namespace Clave1_Grupo1
         private void btnArtista_Click(object sender, EventArgs e)
         {
             Abrirformhijo(new FormArtista());
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

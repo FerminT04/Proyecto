@@ -31,16 +31,16 @@ namespace Clave1_Grupo1
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnInicioSesion = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnSalirL = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -54,21 +54,11 @@ namespace Clave1_Grupo1
             this.panel1.Size = new System.Drawing.Size(213, 315);
             this.panel1.TabIndex = 1;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(34, 50);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(146, 171);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(231)))), ((int)(((byte)(223)))));
+            this.panel2.Controls.Add(this.btnSalirL);
             this.panel2.Controls.Add(this.btnInicioSesion);
-            this.panel2.Controls.Add(this.btnSalir);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.txtContraseña);
             this.panel2.Controls.Add(this.txtUsuario);
@@ -94,19 +84,6 @@ namespace Clave1_Grupo1
             this.btnInicioSesion.TabIndex = 12;
             this.btnInicioSesion.Text = "INICIAR SESION";
             this.btnInicioSesion.UseVisualStyleBackColor = false;
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.FlatAppearance.BorderSize = 0;
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnSalir.Location = new System.Drawing.Point(496, 0);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 32);
-            this.btnSalir.TabIndex = 11;
-            this.btnSalir.Text = "Exit";
-            this.btnSalir.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -144,6 +121,30 @@ namespace Clave1_Grupo1
             this.txtUsuario.TabIndex = 8;
             this.txtUsuario.Text = "USUARIO";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(34, 50);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(146, 171);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnSalirL
+            // 
+            this.btnSalirL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(132)))), ((int)(((byte)(209)))));
+            this.btnSalirL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalirL.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSalirL.Image = global::Clave1_Grupo1.Properties.Resources.cerrar;
+            this.btnSalirL.Location = new System.Drawing.Point(541, 0);
+            this.btnSalirL.Margin = new System.Windows.Forms.Padding(0);
+            this.btnSalirL.Name = "btnSalirL";
+            this.btnSalirL.Size = new System.Drawing.Size(30, 30);
+            this.btnSalirL.TabIndex = 13;
+            this.btnSalirL.UseVisualStyleBackColor = false;
+            this.btnSalirL.Click += new System.EventHandler(this.btnSalirL_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -155,9 +156,9 @@ namespace Clave1_Grupo1
             this.Name = "Login";
             this.Text = "Login";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -168,9 +169,9 @@ namespace Clave1_Grupo1
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnInicioSesion;
-        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.Button btnSalirL;
     }
 }

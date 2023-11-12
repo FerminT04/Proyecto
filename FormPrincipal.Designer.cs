@@ -39,16 +39,21 @@ namespace Clave1_Grupo1
             this.btnLocales = new System.Windows.Forms.Button();
             this.btnCerrarImg = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.paneVentanas = new System.Windows.Forms.Panel();
+            this.btnMinimizar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.panel_menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
+            this.panel1.Controls.Add(this.btnMinimizar);
+            this.panel1.Controls.Add(this.btnSalir);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1003, 18);
+            this.panel1.Size = new System.Drawing.Size(1003, 30);
             this.panel1.TabIndex = 4;
             // 
             // panel_menu
@@ -64,7 +69,7 @@ namespace Clave1_Grupo1
             this.panel_menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_menu.Location = new System.Drawing.Point(0, 0);
             this.panel_menu.Name = "panel_menu";
-            this.panel_menu.Size = new System.Drawing.Size(200, 468);
+            this.panel_menu.Size = new System.Drawing.Size(200, 480);
             this.panel_menu.TabIndex = 5;
             // 
             // btnUsuarios
@@ -164,24 +169,49 @@ namespace Clave1_Grupo1
             this.btnCerrar.Text = "Cerrar Sesion";
             this.btnCerrar.UseVisualStyleBackColor = true;
             // 
-            // paneVentanas
+            // btnMinimizar
             // 
-            this.paneVentanas.Location = new System.Drawing.Point(202, 18);
-            this.paneVentanas.Name = "paneVentanas";
-            this.paneVentanas.Size = new System.Drawing.Size(800, 450);
-            this.paneVentanas.TabIndex = 6;
+            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimizar.Image = global::Clave1_Grupo1.Properties.Resources.minimizar;
+            this.btnMinimizar.Location = new System.Drawing.Point(943, 0);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(0);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(30, 30);
+            this.btnMinimizar.TabIndex = 7;
+            this.btnMinimizar.UseVisualStyleBackColor = true;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Image = global::Clave1_Grupo1.Properties.Resources.cerrar;
+            this.btnSalir.Location = new System.Drawing.Point(973, 0);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(0);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(30, 30);
+            this.btnSalir.TabIndex = 8;
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(201, 30);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(800, 450);
+            this.panel2.TabIndex = 6;
             // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1003, 468);
-            this.Controls.Add(this.paneVentanas);
+            this.ClientSize = new System.Drawing.Size(1003, 480);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel_menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormPrincipal";
             this.Text = "FormPrincipal";
+            this.panel1.ResumeLayout(false);
             this.panel_menu.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -198,6 +228,8 @@ namespace Clave1_Grupo1
         private System.Windows.Forms.Button btnLocales;
         private System.Windows.Forms.Button btnCerrarImg;
         private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Panel paneVentanas;
+        private System.Windows.Forms.Button btnMinimizar;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Panel panel2;
     }
 }

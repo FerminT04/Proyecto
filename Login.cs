@@ -16,5 +16,10 @@ namespace Clave1_Grupo1
         {
             InitializeComponent();
         }
+
+        private void btnSalirL_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
