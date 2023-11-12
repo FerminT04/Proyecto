@@ -8,10 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Clave1_Grupo1
 {
     public partial class FormArtista : Form
     {
+
         public FormArtista()
         {
             InitializeComponent();

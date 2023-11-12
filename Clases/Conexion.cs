@@ -4,38 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Windows.Forms;
 
 namespace Clave1_Grupo1.Clases
 {
     class Conexion
     {
-        //static void Main(string[] args)
-        //{
-        //    string servidor = "localhost";
-        //    string baseDatos = "clave1_grupo1db";
-        //    string usuario = "root";
-        //    string contraseña = "root";
+        public static  MySqlConnection conexion()
+        {
+            string servidor = "localhost"; //Nombre o ip del servidor de MySQL
+            string bd = "clave1_grupo1db"; //Nombre de la base de datos
+            string usuario = "root"; //Usuario de acceso a MySQL
+            string password = "root"; //Contraseña de usuario de acceso a MySQL
 
-        //    string cadenaConexion = $"Server={servidor};Database={baseDatos};User ID={usuario};Password={contraseña};";
+            string cadenaConexion = "Database=" + bd + "; Data source=" + servidor + "; User id=" + usuario + "; Password=" + password + "";
 
-        //    try
-        //    {
-        //        using (MySqlConnection conexion = new MySqlConnection(cadenaConexion))
-        //        {
-        //            conexion.Open();
-
-        //            Console.WriteLine("Conexión exitosa a la base de datos.");
-
-
-        //            conexion.Close();
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Console.WriteLine($"Error al conectar a la base de datos: {ex.Message}");
-        //    }
-
-        //    Console.ReadKey();
-        //}
+            try
+            {
+                MySqlConnection conexiondb = new MySqlConnection(cadenaConexion);
+                return conexiondb;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error al conectar a la base", "Error critico" + ex);
+                return null;
+            }
+        }
     }
 }

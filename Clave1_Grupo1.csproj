@@ -98,6 +98,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Conexion.cs" />
+    <Compile Include="Clases\Constructor_Artista.cs" />
+    <Compile Include="Clases\Crud_Artista.cs" />
     <Compile Include="FormArtista.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,8 +201,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Clases\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
