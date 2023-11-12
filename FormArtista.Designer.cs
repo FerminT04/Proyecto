@@ -153,6 +153,7 @@ namespace Clave1_Grupo1
             this.Controls.Add(this.paneldiseño1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormArtista";
+            this.Opacity = 0.9D;
             this.Text = "FormArtista";
             ((System.ComponentModel.ISupportInitialize)(this.dgvArtista)).EndInit();
             this.panel1.ResumeLayout(false);

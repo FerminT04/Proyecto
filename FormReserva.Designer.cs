@@ -31,17 +31,17 @@ namespace Clave1_Grupo1
         {
             this.dgvReserva = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtCosto = new System.Windows.Forms.TextBox();
+            this.cbUsuario = new System.Windows.Forms.ComboBox();
+            this.cbArtista = new System.Windows.Forms.ComboBox();
+            this.dtpFin = new System.Windows.Forms.DateTimePicker();
+            this.dtpInicio = new System.Windows.Forms.DateTimePicker();
+            this.cbLocal = new System.Windows.Forms.ComboBox();
             this.btnAgregarR = new System.Windows.Forms.Button();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.paneldiseño1 = new System.Windows.Forms.Panel();
             this.btnEliminarR = new System.Windows.Forms.Button();
             this.btnActualizarR = new System.Windows.Forms.Button();
-            this.cbLocal = new System.Windows.Forms.ComboBox();
-            this.dtpInicio = new System.Windows.Forms.DateTimePicker();
-            this.dtpFin = new System.Windows.Forms.DateTimePicker();
-            this.cbArtista = new System.Windows.Forms.ComboBox();
-            this.cbUsuario = new System.Windows.Forms.ComboBox();
-            this.txtCosto = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReserva)).BeginInit();
             this.panel1.SuspendLayout();
             this.paneldiseño1.SuspendLayout();
@@ -70,6 +70,62 @@ namespace Clave1_Grupo1
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(220, 450);
             this.panel1.TabIndex = 8;
+            // 
+            // txtCosto
+            // 
+            this.txtCosto.ForeColor = System.Drawing.Color.DimGray;
+            this.txtCosto.Location = new System.Drawing.Point(28, 255);
+            this.txtCosto.Name = "txtCosto";
+            this.txtCosto.Size = new System.Drawing.Size(169, 20);
+            this.txtCosto.TabIndex = 86;
+            this.txtCosto.Text = "Costo total";
+            // 
+            // cbUsuario
+            // 
+            this.cbUsuario.ForeColor = System.Drawing.Color.DimGray;
+            this.cbUsuario.FormattingEnabled = true;
+            this.cbUsuario.Location = new System.Drawing.Point(28, 298);
+            this.cbUsuario.Name = "cbUsuario";
+            this.cbUsuario.Size = new System.Drawing.Size(169, 21);
+            this.cbUsuario.TabIndex = 85;
+            this.cbUsuario.Text = "Usuario";
+            // 
+            // cbArtista
+            // 
+            this.cbArtista.ForeColor = System.Drawing.Color.DimGray;
+            this.cbArtista.FormattingEnabled = true;
+            this.cbArtista.Location = new System.Drawing.Point(28, 170);
+            this.cbArtista.Name = "cbArtista";
+            this.cbArtista.Size = new System.Drawing.Size(169, 21);
+            this.cbArtista.TabIndex = 84;
+            this.cbArtista.Text = "Artista";
+            // 
+            // dtpFin
+            // 
+            this.dtpFin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFin.Location = new System.Drawing.Point(28, 125);
+            this.dtpFin.Name = "dtpFin";
+            this.dtpFin.Size = new System.Drawing.Size(169, 20);
+            this.dtpFin.TabIndex = 83;
+            // 
+            // dtpInicio
+            // 
+            this.dtpInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpInicio.Location = new System.Drawing.Point(28, 77);
+            this.dtpInicio.Name = "dtpInicio";
+            this.dtpInicio.Size = new System.Drawing.Size(169, 20);
+            this.dtpInicio.TabIndex = 82;
+            this.dtpInicio.Tag = "";
+            // 
+            // cbLocal
+            // 
+            this.cbLocal.ForeColor = System.Drawing.Color.DimGray;
+            this.cbLocal.FormattingEnabled = true;
+            this.cbLocal.Location = new System.Drawing.Point(28, 33);
+            this.cbLocal.Name = "cbLocal";
+            this.cbLocal.Size = new System.Drawing.Size(169, 21);
+            this.cbLocal.TabIndex = 81;
+            this.cbLocal.Text = "Local";
             // 
             // btnAgregarR
             // 
@@ -144,62 +200,6 @@ namespace Clave1_Grupo1
             this.btnActualizarR.Text = "ACTUALIZAR RESERVA";
             this.btnActualizarR.UseVisualStyleBackColor = false;
             // 
-            // cbLocal
-            // 
-            this.cbLocal.ForeColor = System.Drawing.Color.DimGray;
-            this.cbLocal.FormattingEnabled = true;
-            this.cbLocal.Location = new System.Drawing.Point(28, 33);
-            this.cbLocal.Name = "cbLocal";
-            this.cbLocal.Size = new System.Drawing.Size(169, 21);
-            this.cbLocal.TabIndex = 81;
-            this.cbLocal.Text = "Local";
-            // 
-            // dtpInicio
-            // 
-            this.dtpInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpInicio.Location = new System.Drawing.Point(28, 77);
-            this.dtpInicio.Name = "dtpInicio";
-            this.dtpInicio.Size = new System.Drawing.Size(169, 20);
-            this.dtpInicio.TabIndex = 82;
-            this.dtpInicio.Tag = "";
-            // 
-            // dtpFin
-            // 
-            this.dtpFin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFin.Location = new System.Drawing.Point(28, 125);
-            this.dtpFin.Name = "dtpFin";
-            this.dtpFin.Size = new System.Drawing.Size(169, 20);
-            this.dtpFin.TabIndex = 83;
-            // 
-            // cbArtista
-            // 
-            this.cbArtista.ForeColor = System.Drawing.Color.DimGray;
-            this.cbArtista.FormattingEnabled = true;
-            this.cbArtista.Location = new System.Drawing.Point(28, 170);
-            this.cbArtista.Name = "cbArtista";
-            this.cbArtista.Size = new System.Drawing.Size(169, 21);
-            this.cbArtista.TabIndex = 84;
-            this.cbArtista.Text = "Artista";
-            // 
-            // cbUsuario
-            // 
-            this.cbUsuario.ForeColor = System.Drawing.Color.DimGray;
-            this.cbUsuario.FormattingEnabled = true;
-            this.cbUsuario.Location = new System.Drawing.Point(28, 298);
-            this.cbUsuario.Name = "cbUsuario";
-            this.cbUsuario.Size = new System.Drawing.Size(169, 21);
-            this.cbUsuario.TabIndex = 85;
-            this.cbUsuario.Text = "Usuario";
-            // 
-            // txtCosto
-            // 
-            this.txtCosto.ForeColor = System.Drawing.Color.DimGray;
-            this.txtCosto.Location = new System.Drawing.Point(28, 255);
-            this.txtCosto.Name = "txtCosto";
-            this.txtCosto.Size = new System.Drawing.Size(169, 20);
-            this.txtCosto.TabIndex = 86;
-            this.txtCosto.Text = "Costo total";
-            // 
             // FormReserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -210,6 +210,7 @@ namespace Clave1_Grupo1
             this.Controls.Add(this.paneldiseño1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormReserva";
+            this.Opacity = 0.9D;
             this.Text = "FormReserva";
             ((System.ComponentModel.ISupportInitialize)(this.dgvReserva)).EndInit();
             this.panel1.ResumeLayout(false);

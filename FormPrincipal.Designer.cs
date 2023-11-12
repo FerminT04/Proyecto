@@ -32,7 +32,6 @@ namespace Clave1_Grupo1
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.panel_menu = new System.Windows.Forms.Panel();
             this.btnUsuarios = new System.Windows.Forms.Button();
             this.btnArtista = new System.Windows.Forms.Button();
@@ -50,7 +49,6 @@ namespace Clave1_Grupo1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
             this.panel1.Controls.Add(this.btnMinimizar);
-            this.panel1.Controls.Add(this.btnSalir);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1003, 30);
@@ -61,26 +59,13 @@ namespace Clave1_Grupo1
             this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
             this.btnMinimizar.Image = global::Clave1_Grupo1.Properties.Resources.minimizar;
-            this.btnMinimizar.Location = new System.Drawing.Point(943, 0);
+            this.btnMinimizar.Location = new System.Drawing.Point(972, 0);
             this.btnMinimizar.Margin = new System.Windows.Forms.Padding(0);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(30, 30);
             this.btnMinimizar.TabIndex = 7;
             this.btnMinimizar.UseVisualStyleBackColor = true;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
-            this.btnSalir.Image = global::Clave1_Grupo1.Properties.Resources.cerrar;
-            this.btnSalir.Location = new System.Drawing.Point(973, 0);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(0);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(30, 30);
-            this.btnSalir.TabIndex = 8;
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // panel_menu
             // 
@@ -214,6 +199,8 @@ namespace Clave1_Grupo1
             this.Controls.Add(this.panel_menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormPrincipal";
+            this.Opacity = 0.9D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormPrincipal";
             this.panel1.ResumeLayout(false);
             this.panel_menu.ResumeLayout(false);
@@ -233,7 +220,6 @@ namespace Clave1_Grupo1
         private System.Windows.Forms.Button btnCerrarImg;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnMinimizar;
-        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Panel panel2;
     }
 }

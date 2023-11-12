@@ -175,6 +175,7 @@ namespace Clave1_Grupo1
             this.Controls.Add(this.paneldiseño1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormUsuario";
+            this.Opacity = 0.9D;
             this.Text = "FormUsuario";
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).EndInit();
             this.panel1.ResumeLayout(false);

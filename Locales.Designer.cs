@@ -31,6 +31,12 @@ namespace Clave1_Grupo1
         {
             this.dgvLocales = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbTipo = new System.Windows.Forms.ComboBox();
+            this.cbSillas = new System.Windows.Forms.ComboBox();
+            this.cbSonido = new System.Windows.Forms.ComboBox();
+            this.cbIluminacion = new System.Windows.Forms.ComboBox();
+            this.txtDistribucion = new System.Windows.Forms.TextBox();
+            this.cbDisponibilidad = new System.Windows.Forms.ComboBox();
             this.btnAgregarL = new System.Windows.Forms.Button();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtCapacidad = new System.Windows.Forms.TextBox();
@@ -38,12 +44,6 @@ namespace Clave1_Grupo1
             this.paneldiseño1 = new System.Windows.Forms.Panel();
             this.btnEliminarL = new System.Windows.Forms.Button();
             this.btnActualizarL = new System.Windows.Forms.Button();
-            this.cbDisponibilidad = new System.Windows.Forms.ComboBox();
-            this.txtDistribucion = new System.Windows.Forms.TextBox();
-            this.cbIluminacion = new System.Windows.Forms.ComboBox();
-            this.cbSonido = new System.Windows.Forms.ComboBox();
-            this.cbSillas = new System.Windows.Forms.ComboBox();
-            this.cbTipo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLocales)).BeginInit();
             this.panel1.SuspendLayout();
             this.paneldiseño1.SuspendLayout();
@@ -74,6 +74,65 @@ namespace Clave1_Grupo1
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(220, 450);
             this.panel1.TabIndex = 8;
+            // 
+            // cbTipo
+            // 
+            this.cbTipo.ForeColor = System.Drawing.Color.DimGray;
+            this.cbTipo.FormattingEnabled = true;
+            this.cbTipo.Location = new System.Drawing.Point(28, 97);
+            this.cbTipo.Name = "cbTipo";
+            this.cbTipo.Size = new System.Drawing.Size(169, 21);
+            this.cbTipo.TabIndex = 86;
+            this.cbTipo.Text = "Tipo de local";
+            // 
+            // cbSillas
+            // 
+            this.cbSillas.ForeColor = System.Drawing.Color.DimGray;
+            this.cbSillas.FormattingEnabled = true;
+            this.cbSillas.Location = new System.Drawing.Point(28, 373);
+            this.cbSillas.Name = "cbSillas";
+            this.cbSillas.Size = new System.Drawing.Size(169, 21);
+            this.cbSillas.TabIndex = 85;
+            this.cbSillas.Text = "Sillas";
+            // 
+            // cbSonido
+            // 
+            this.cbSonido.ForeColor = System.Drawing.Color.DimGray;
+            this.cbSonido.FormattingEnabled = true;
+            this.cbSonido.Location = new System.Drawing.Point(28, 334);
+            this.cbSonido.Name = "cbSonido";
+            this.cbSonido.Size = new System.Drawing.Size(169, 21);
+            this.cbSonido.TabIndex = 84;
+            this.cbSonido.Text = "Sonido";
+            // 
+            // cbIluminacion
+            // 
+            this.cbIluminacion.ForeColor = System.Drawing.Color.DimGray;
+            this.cbIluminacion.FormattingEnabled = true;
+            this.cbIluminacion.Location = new System.Drawing.Point(28, 291);
+            this.cbIluminacion.Name = "cbIluminacion";
+            this.cbIluminacion.Size = new System.Drawing.Size(169, 21);
+            this.cbIluminacion.TabIndex = 83;
+            this.cbIluminacion.Text = "Iluminacion";
+            // 
+            // txtDistribucion
+            // 
+            this.txtDistribucion.ForeColor = System.Drawing.Color.DimGray;
+            this.txtDistribucion.Location = new System.Drawing.Point(28, 253);
+            this.txtDistribucion.Name = "txtDistribucion";
+            this.txtDistribucion.Size = new System.Drawing.Size(169, 20);
+            this.txtDistribucion.TabIndex = 82;
+            this.txtDistribucion.Text = "Distribucion fisica";
+            // 
+            // cbDisponibilidad
+            // 
+            this.cbDisponibilidad.ForeColor = System.Drawing.Color.DimGray;
+            this.cbDisponibilidad.FormattingEnabled = true;
+            this.cbDisponibilidad.Location = new System.Drawing.Point(28, 53);
+            this.cbDisponibilidad.Name = "cbDisponibilidad";
+            this.cbDisponibilidad.Size = new System.Drawing.Size(169, 21);
+            this.cbDisponibilidad.TabIndex = 81;
+            this.cbDisponibilidad.Text = "Disponibilidad";
             // 
             // btnAgregarL
             // 
@@ -167,65 +226,6 @@ namespace Clave1_Grupo1
             this.btnActualizarL.Text = "ACTUALIZAR LOCALES";
             this.btnActualizarL.UseVisualStyleBackColor = false;
             // 
-            // cbDisponibilidad
-            // 
-            this.cbDisponibilidad.ForeColor = System.Drawing.Color.DimGray;
-            this.cbDisponibilidad.FormattingEnabled = true;
-            this.cbDisponibilidad.Location = new System.Drawing.Point(28, 53);
-            this.cbDisponibilidad.Name = "cbDisponibilidad";
-            this.cbDisponibilidad.Size = new System.Drawing.Size(169, 21);
-            this.cbDisponibilidad.TabIndex = 81;
-            this.cbDisponibilidad.Text = "Disponibilidad";
-            // 
-            // txtDistribucion
-            // 
-            this.txtDistribucion.ForeColor = System.Drawing.Color.DimGray;
-            this.txtDistribucion.Location = new System.Drawing.Point(28, 253);
-            this.txtDistribucion.Name = "txtDistribucion";
-            this.txtDistribucion.Size = new System.Drawing.Size(169, 20);
-            this.txtDistribucion.TabIndex = 82;
-            this.txtDistribucion.Text = "Distribucion fisica";
-            // 
-            // cbIluminacion
-            // 
-            this.cbIluminacion.ForeColor = System.Drawing.Color.DimGray;
-            this.cbIluminacion.FormattingEnabled = true;
-            this.cbIluminacion.Location = new System.Drawing.Point(28, 291);
-            this.cbIluminacion.Name = "cbIluminacion";
-            this.cbIluminacion.Size = new System.Drawing.Size(169, 21);
-            this.cbIluminacion.TabIndex = 83;
-            this.cbIluminacion.Text = "Iluminacion";
-            // 
-            // cbSonido
-            // 
-            this.cbSonido.ForeColor = System.Drawing.Color.DimGray;
-            this.cbSonido.FormattingEnabled = true;
-            this.cbSonido.Location = new System.Drawing.Point(28, 334);
-            this.cbSonido.Name = "cbSonido";
-            this.cbSonido.Size = new System.Drawing.Size(169, 21);
-            this.cbSonido.TabIndex = 84;
-            this.cbSonido.Text = "Sonido";
-            // 
-            // cbSillas
-            // 
-            this.cbSillas.ForeColor = System.Drawing.Color.DimGray;
-            this.cbSillas.FormattingEnabled = true;
-            this.cbSillas.Location = new System.Drawing.Point(28, 373);
-            this.cbSillas.Name = "cbSillas";
-            this.cbSillas.Size = new System.Drawing.Size(169, 21);
-            this.cbSillas.TabIndex = 85;
-            this.cbSillas.Text = "Sillas";
-            // 
-            // cbTipo
-            // 
-            this.cbTipo.ForeColor = System.Drawing.Color.DimGray;
-            this.cbTipo.FormattingEnabled = true;
-            this.cbTipo.Location = new System.Drawing.Point(28, 97);
-            this.cbTipo.Name = "cbTipo";
-            this.cbTipo.Size = new System.Drawing.Size(169, 21);
-            this.cbTipo.TabIndex = 86;
-            this.cbTipo.Text = "Tipo de local";
-            // 
             // Locales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -236,6 +236,7 @@ namespace Clave1_Grupo1
             this.Controls.Add(this.paneldiseño1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Locales";
+            this.Opacity = 0.9D;
             this.Text = "Locales";
             ((System.ComponentModel.ISupportInitialize)(this.dgvLocales)).EndInit();
             this.panel1.ResumeLayout(false);
