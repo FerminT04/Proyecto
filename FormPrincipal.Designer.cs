@@ -31,6 +31,8 @@ namespace Clave1_Grupo1
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMinimizar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.panel_menu = new System.Windows.Forms.Panel();
             this.btnUsuarios = new System.Windows.Forms.Button();
             this.btnArtista = new System.Windows.Forms.Button();
@@ -39,8 +41,6 @@ namespace Clave1_Grupo1
             this.btnLocales = new System.Windows.Forms.Button();
             this.btnCerrarImg = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnMinimizar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel_menu.SuspendLayout();
@@ -55,6 +55,32 @@ namespace Clave1_Grupo1
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1003, 30);
             this.panel1.TabIndex = 4;
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
+            this.btnMinimizar.Image = global::Clave1_Grupo1.Properties.Resources.minimizar;
+            this.btnMinimizar.Location = new System.Drawing.Point(943, 0);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(0);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(30, 30);
+            this.btnMinimizar.TabIndex = 7;
+            this.btnMinimizar.UseVisualStyleBackColor = true;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
+            this.btnSalir.Image = global::Clave1_Grupo1.Properties.Resources.cerrar;
+            this.btnSalir.Location = new System.Drawing.Point(973, 0);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(0);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(30, 30);
+            this.btnSalir.TabIndex = 8;
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // panel_menu
             // 
@@ -168,33 +194,11 @@ namespace Clave1_Grupo1
             this.btnCerrar.TabIndex = 0;
             this.btnCerrar.Text = "Cerrar Sesion";
             this.btnCerrar.UseVisualStyleBackColor = true;
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimizar.Image = global::Clave1_Grupo1.Properties.Resources.minimizar;
-            this.btnMinimizar.Location = new System.Drawing.Point(943, 0);
-            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(0);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(30, 30);
-            this.btnMinimizar.TabIndex = 7;
-            this.btnMinimizar.UseVisualStyleBackColor = true;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Image = global::Clave1_Grupo1.Properties.Resources.cerrar;
-            this.btnSalir.Location = new System.Drawing.Point(973, 0);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(0);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(30, 30);
-            this.btnSalir.TabIndex = 8;
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_click);
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.Location = new System.Drawing.Point(201, 30);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(800, 450);

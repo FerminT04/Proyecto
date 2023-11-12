@@ -58,5 +58,15 @@ namespace Clave1_Grupo1
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void btnCerrar_click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Está seguro de querer cerrar sesión?", "Advertencia", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Form us = new Login();
+                us.Show();
+                this.Hide();
+            }
+        }
     }
 }

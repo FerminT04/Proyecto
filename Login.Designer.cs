@@ -31,16 +31,16 @@ namespace Clave1_Grupo1
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSalirL = new System.Windows.Forms.Button();
             this.btnInicioSesion = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtContraseña = new System.Windows.Forms.TextBox();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnSalirL = new System.Windows.Forms.Button();
+            this.txtContraseñas = new System.Windows.Forms.TextBox();
+            this.txtUsuarios = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -54,18 +54,43 @@ namespace Clave1_Grupo1
             this.panel1.Size = new System.Drawing.Size(213, 315);
             this.panel1.TabIndex = 1;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(34, 50);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(146, 171);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(231)))), ((int)(((byte)(223)))));
             this.panel2.Controls.Add(this.btnSalirL);
             this.panel2.Controls.Add(this.btnInicioSesion);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.txtContraseña);
-            this.panel2.Controls.Add(this.txtUsuario);
+            this.panel2.Controls.Add(this.txtContraseñas);
+            this.panel2.Controls.Add(this.txtUsuarios);
             this.panel2.Location = new System.Drawing.Point(209, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(571, 315);
             this.panel2.TabIndex = 2;
+            // 
+            // btnSalirL
+            // 
+            this.btnSalirL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(231)))), ((int)(((byte)(223)))));
+            this.btnSalirL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalirL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(231)))), ((int)(((byte)(223)))));
+            this.btnSalirL.Image = global::Clave1_Grupo1.Properties.Resources.cerrar;
+            this.btnSalirL.Location = new System.Drawing.Point(541, 0);
+            this.btnSalirL.Margin = new System.Windows.Forms.Padding(0);
+            this.btnSalirL.Name = "btnSalirL";
+            this.btnSalirL.Size = new System.Drawing.Size(30, 30);
+            this.btnSalirL.TabIndex = 13;
+            this.btnSalirL.UseVisualStyleBackColor = false;
+            this.btnSalirL.Click += new System.EventHandler(this.btnSalirL_Click);
             // 
             // btnInicioSesion
             // 
@@ -84,6 +109,7 @@ namespace Clave1_Grupo1
             this.btnInicioSesion.TabIndex = 12;
             this.btnInicioSesion.Text = "INICIAR SESION";
             this.btnInicioSesion.UseVisualStyleBackColor = false;
+            this.btnInicioSesion.Click += new System.EventHandler(this.btnIniciarS);
             // 
             // label1
             // 
@@ -97,53 +123,37 @@ namespace Clave1_Grupo1
             this.label1.TabIndex = 10;
             this.label1.Text = "LOGIN";
             // 
-            // txtContraseña
+            // txtContraseñas
             // 
-            this.txtContraseña.BackColor = System.Drawing.Color.White;
-            this.txtContraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContraseña.ForeColor = System.Drawing.Color.DimGray;
-            this.txtContraseña.Location = new System.Drawing.Point(148, 152);
-            this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(281, 17);
-            this.txtContraseña.TabIndex = 9;
-            this.txtContraseña.Text = "CONTRASEÑA";
+            this.txtContraseñas.BackColor = System.Drawing.Color.White;
+            this.txtContraseñas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtContraseñas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseñas.ForeColor = System.Drawing.Color.DimGray;
+            this.txtContraseñas.Location = new System.Drawing.Point(148, 152);
+            this.txtContraseñas.Name = "txtContraseñas";
+            this.txtContraseñas.Size = new System.Drawing.Size(281, 17);
+            this.txtContraseñas.TabIndex = 9;
+            this.txtContraseñas.Text = "CONTRASEÑA";
+            this.txtContraseñas.TextChanged += new System.EventHandler(this.txtContraseña_TextChanged);
+            this.txtContraseñas.Enter += new System.EventHandler(this.txtContraseña_enter);
+            this.txtContraseñas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContraseña);
+            this.txtContraseñas.Leave += new System.EventHandler(this.txtContraseña_leave);
             // 
-            // txtUsuario
+            // txtUsuarios
             // 
-            this.txtUsuario.BackColor = System.Drawing.Color.White;
-            this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.ForeColor = System.Drawing.Color.DimGray;
-            this.txtUsuario.Location = new System.Drawing.Point(148, 105);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(281, 17);
-            this.txtUsuario.TabIndex = 8;
-            this.txtUsuario.Text = "USUARIO";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(34, 50);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(146, 171);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnSalirL
-            // 
-            this.btnSalirL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(132)))), ((int)(((byte)(209)))));
-            this.btnSalirL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalirL.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSalirL.Image = global::Clave1_Grupo1.Properties.Resources.cerrar;
-            this.btnSalirL.Location = new System.Drawing.Point(541, 0);
-            this.btnSalirL.Margin = new System.Windows.Forms.Padding(0);
-            this.btnSalirL.Name = "btnSalirL";
-            this.btnSalirL.Size = new System.Drawing.Size(30, 30);
-            this.btnSalirL.TabIndex = 13;
-            this.btnSalirL.UseVisualStyleBackColor = false;
-            this.btnSalirL.Click += new System.EventHandler(this.btnSalirL_Click);
+            this.txtUsuarios.BackColor = System.Drawing.Color.White;
+            this.txtUsuarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuarios.ForeColor = System.Drawing.Color.DimGray;
+            this.txtUsuarios.Location = new System.Drawing.Point(148, 105);
+            this.txtUsuarios.Name = "txtUsuarios";
+            this.txtUsuarios.Size = new System.Drawing.Size(281, 17);
+            this.txtUsuarios.TabIndex = 8;
+            this.txtUsuarios.Text = "USUARIO";
+            this.txtUsuarios.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
+            this.txtUsuarios.Enter += new System.EventHandler(this.txtUsuario_enter);
+            this.txtUsuarios.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsuario);
+            this.txtUsuarios.Leave += new System.EventHandler(this.txtUsuario_leave);
             // 
             // Login
             // 
@@ -156,9 +166,9 @@ namespace Clave1_Grupo1
             this.Name = "Login";
             this.Text = "Login";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -170,8 +180,8 @@ namespace Clave1_Grupo1
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnInicioSesion;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtContraseña;
-        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtContraseñas;
+        private System.Windows.Forms.TextBox txtUsuarios;
         private System.Windows.Forms.Button btnSalirL;
     }
 }

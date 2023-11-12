@@ -98,7 +98,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\Conexion.cs" />
     <Compile Include="FormArtista.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +197,9 @@
     <Content Include="Recursos\Imagenes\user3.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Clases\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
