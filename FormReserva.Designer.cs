@@ -102,7 +102,7 @@ namespace Clave1_Grupo1
             // 
             // dtpFin
             // 
-            this.dtpFin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFin.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpFin.Location = new System.Drawing.Point(28, 125);
             this.dtpFin.Name = "dtpFin";
             this.dtpFin.Size = new System.Drawing.Size(169, 20);
@@ -110,7 +110,7 @@ namespace Clave1_Grupo1
             // 
             // dtpInicio
             // 
-            this.dtpInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpInicio.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpInicio.Location = new System.Drawing.Point(28, 77);
             this.dtpInicio.Name = "dtpInicio";
             this.dtpInicio.Size = new System.Drawing.Size(169, 20);
