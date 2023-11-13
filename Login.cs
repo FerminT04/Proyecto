@@ -14,13 +14,9 @@ namespace Clave1_Grupo1
 {
     public partial class Login : Form
     {
-        //private MySqlConnection conexion;
         public Login()
         {
             InitializeComponent();
-
-            //string cadenaConexion = "Server=localhost;Database=clave1_grupo1db;User ID=root;Password=root;";
-            //conexion = new MySqlConnection(cadenaConexion);
         }
 
         MySqlConnection conexiondb = Conexion.conexion();
@@ -97,54 +93,7 @@ namespace Clave1_Grupo1
             }
 
             conexiondb.Close();
-            //string usuario = txtUsuarios.Text;
-            //string contraseña = txtContraseñas.Text;
-
-            //if (ValidarCredenciales(usuario, contraseña))
-            //{
-            //    MessageBox.Show("Inicio de sesión exitoso");
-            //    this.Hide();
-            //    FormPrincipal formularioPrincipal = new FormPrincipal();
-            //    formularioPrincipal.Show();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Error en las credenciales");
-            //}
         }
-
-        //private bool ValidarCredenciales(string usuario, string contraseña)
-        //{
-        //    if (conexion.State == ConnectionState.Closed)
-        //    {
-        //        conexion.Open();
-        //    }
-
-        //    try
-        //    {
-        //        string consulta = "SELECT * FROM usuarios WHERE nombre = @nombre AND contraseña = @contraseña";
-        //        MySqlCommand comando = new MySqlCommand(consulta, conexion);
-        //        comando.Parameters.AddWithValue("@nombre", usuario);
-        //        comando.Parameters.AddWithValue("@contraseña", contraseña);
-
-        //        MySqlDataReader reader = comando.ExecuteReader();
-        //        if (reader.Read())
-        //        {
-        //            // Credenciales válidas
-        //            return true;
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Console.WriteLine($"Error al validar credenciales: {ex.Message}");
-        //    }
-        //    finally
-        //    {
-        //        conexion.Close();
-        //    }
-
-        //    return false;
-        //}
 
         private void txtUsuario_leave(object sender, EventArgs e)
         {

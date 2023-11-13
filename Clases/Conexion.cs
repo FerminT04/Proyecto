@@ -16,8 +16,10 @@ namespace Clave1_Grupo1.Clases
             string bd = "clave1_grupo1db"; //Nombre de la base de datos
             string usuario = "root"; //Usuario de acceso a MySQL
             string password = "root"; //Contraseña de usuario de acceso a MySQL
-
-            string cadenaConexion = "Database=" + bd + "; Data source=" + servidor + "; User id=" + usuario + "; Password=" + password + "";
+                                             //Crearemos la cadena de conexión concatenando las variables
+            string cadenaConexion = "Database=" + bd + "; Data Source=" + servidor +
+            "; User Id=" + usuario + "; Password=" + password + "";
+            //Instancia para conexión a MySQL, recibe la cadena de conexión
 
             try
             {

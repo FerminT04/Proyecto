@@ -37,6 +37,8 @@ namespace Clave1_Grupo1
             this.paneldiseño1 = new System.Windows.Forms.Panel();
             this.btnEliminarA = new System.Windows.Forms.Button();
             this.btnActualizarA = new System.Windows.Forms.Button();
+            this.txtId_artista = new System.Windows.Forms.TextBox();
+            this.btnMostrarA = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArtista)).BeginInit();
             this.panel1.SuspendLayout();
             this.paneldiseño1.SuspendLayout();
@@ -44,15 +46,20 @@ namespace Clave1_Grupo1
             // 
             // dgvArtista
             // 
+            this.dgvArtista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvArtista.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvArtista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvArtista.Location = new System.Drawing.Point(0, 0);
             this.dgvArtista.Name = "dgvArtista";
+            this.dgvArtista.ReadOnly = true;
             this.dgvArtista.Size = new System.Drawing.Size(581, 352);
-            this.dgvArtista.TabIndex = 10;
+            this.dgvArtista.TabIndex = 12;
+            this.dgvArtista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvArtista_CellContentClick);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(132)))), ((int)(((byte)(209)))));
+            this.panel1.Controls.Add(this.txtId_artista);
             this.panel1.Controls.Add(this.btnAgregarA);
             this.panel1.Controls.Add(this.txtDescripcion);
             this.panel1.Controls.Add(this.txtNombreA);
@@ -77,28 +84,34 @@ namespace Clave1_Grupo1
             this.btnAgregarA.TabIndex = 80;
             this.btnAgregarA.Text = "AGREGAR ARTISTA";
             this.btnAgregarA.UseVisualStyleBackColor = false;
+            this.btnAgregarA.Click += new System.EventHandler(this.btnAgregarA_Click);
             // 
             // txtDescripcion
             // 
             this.txtDescripcion.ForeColor = System.Drawing.Color.DimGray;
-            this.txtDescripcion.Location = new System.Drawing.Point(28, 79);
+            this.txtDescripcion.Location = new System.Drawing.Point(27, 98);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(169, 20);
             this.txtDescripcion.TabIndex = 2;
             this.txtDescripcion.Text = "Descripcion";
+            this.txtDescripcion.Enter += new System.EventHandler(this.txtDescripcion_enter);
+            this.txtDescripcion.Leave += new System.EventHandler(this.txtDescripcion_leave);
             // 
             // txtNombreA
             // 
             this.txtNombreA.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombreA.Location = new System.Drawing.Point(28, 32);
+            this.txtNombreA.Location = new System.Drawing.Point(27, 56);
             this.txtNombreA.Name = "txtNombreA";
             this.txtNombreA.Size = new System.Drawing.Size(169, 20);
             this.txtNombreA.TabIndex = 1;
             this.txtNombreA.Text = "Nombre";
+            this.txtNombreA.Enter += new System.EventHandler(this.txtNombreA_enter);
+            this.txtNombreA.Leave += new System.EventHandler(this.txtNombreA_leave);
             // 
             // paneldiseño1
             // 
             this.paneldiseño1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
+            this.paneldiseño1.Controls.Add(this.btnMostrarA);
             this.paneldiseño1.Controls.Add(this.btnEliminarA);
             this.paneldiseño1.Controls.Add(this.btnActualizarA);
             this.paneldiseño1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -118,12 +131,13 @@ namespace Clave1_Grupo1
             this.btnEliminarA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarA.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarA.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnEliminarA.Location = new System.Drawing.Point(126, 50);
+            this.btnEliminarA.Location = new System.Drawing.Point(0, 50);
             this.btnEliminarA.Name = "btnEliminarA";
             this.btnEliminarA.Size = new System.Drawing.Size(322, 50);
             this.btnEliminarA.TabIndex = 79;
             this.btnEliminarA.Text = "ELIMINAR ARTISTA";
             this.btnEliminarA.UseVisualStyleBackColor = false;
+            this.btnEliminarA.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnEliminarA_MouseClick);
             // 
             // btnActualizarA
             // 
@@ -136,12 +150,42 @@ namespace Clave1_Grupo1
             this.btnActualizarA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizarA.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizarA.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnActualizarA.Location = new System.Drawing.Point(126, 0);
+            this.btnActualizarA.Location = new System.Drawing.Point(0, 0);
             this.btnActualizarA.Name = "btnActualizarA";
             this.btnActualizarA.Size = new System.Drawing.Size(322, 50);
             this.btnActualizarA.TabIndex = 78;
             this.btnActualizarA.Text = "ACTUALIZAR ARTISTA";
             this.btnActualizarA.UseVisualStyleBackColor = false;
+            this.btnActualizarA.Click += new System.EventHandler(this.btnActualizarA_Click);
+            // 
+            // txtId_artista
+            // 
+            this.txtId_artista.ForeColor = System.Drawing.Color.DimGray;
+            this.txtId_artista.Location = new System.Drawing.Point(27, 12);
+            this.txtId_artista.Name = "txtId_artista";
+            this.txtId_artista.ReadOnly = true;
+            this.txtId_artista.Size = new System.Drawing.Size(169, 20);
+            this.txtId_artista.TabIndex = 81;
+            this.txtId_artista.Text = "Id";
+            // 
+            // btnMostrarA
+            // 
+            this.btnMostrarA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
+            this.btnMostrarA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMostrarA.FlatAppearance.BorderColor = System.Drawing.Color.Firebrick;
+            this.btnMostrarA.FlatAppearance.BorderSize = 0;
+            this.btnMostrarA.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
+            this.btnMostrarA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
+            this.btnMostrarA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMostrarA.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMostrarA.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnMostrarA.Location = new System.Drawing.Point(350, 24);
+            this.btnMostrarA.Name = "btnMostrarA";
+            this.btnMostrarA.Size = new System.Drawing.Size(210, 50);
+            this.btnMostrarA.TabIndex = 80;
+            this.btnMostrarA.Text = "MOSTRAR ARTISTAS";
+            this.btnMostrarA.UseVisualStyleBackColor = false;
+            this.btnMostrarA.Click += new System.EventHandler(this.btnMostrarA_Click);
             // 
             // FormArtista
             // 
@@ -173,5 +217,7 @@ namespace Clave1_Grupo1
         private System.Windows.Forms.Panel paneldiseño1;
         private System.Windows.Forms.Button btnEliminarA;
         private System.Windows.Forms.Button btnActualizarA;
+        private System.Windows.Forms.TextBox txtId_artista;
+        private System.Windows.Forms.Button btnMostrarA;
     }
 }
