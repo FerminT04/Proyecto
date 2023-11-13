@@ -38,7 +38,7 @@ namespace Clave1_Grupo1
         //    }
         //    catch
         //    {
-        //        MessageBox.Show("Error al agregar clientes", "Error critico");
+        //        MessageBox.Show("Error al agregar artistas", "Error critico");
         //    }
         //}
         void CargarArtista()
@@ -168,24 +168,6 @@ namespace Clave1_Grupo1
         private void btnMostrarA_Click(object sender, EventArgs e)
         {
             CargarArtista();
-        }
-
-        private void btnEliminarA_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (txtNombreA.Text.Trim() == "" || txtDescripcion.Text.Trim() == "")
-            {
-                MessageBox.Show("Existen campos vacíos", "Error de inserción", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                int datos = Crud_Artista.eliminarArtista(Convert.ToInt32(txtId_artista.Text));
-                if (datos > 0)
-                {
-                    MessageBox.Show("Artista eliminado", "Eliminado");
-                }
-
-                CargarArtista();
-            }
         }
     }
 }

@@ -44,6 +44,7 @@ namespace Clave1_Grupo1
             this.paneldiseño1 = new System.Windows.Forms.Panel();
             this.btnEliminarL = new System.Windows.Forms.Button();
             this.btnActualizarL = new System.Windows.Forms.Button();
+            this.txtId_locales = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLocales)).BeginInit();
             this.panel1.SuspendLayout();
             this.paneldiseño1.SuspendLayout();
@@ -60,6 +61,7 @@ namespace Clave1_Grupo1
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(132)))), ((int)(((byte)(209)))));
+            this.panel1.Controls.Add(this.txtId_locales);
             this.panel1.Controls.Add(this.cbTipo);
             this.panel1.Controls.Add(this.cbSillas);
             this.panel1.Controls.Add(this.cbSonido);
@@ -79,7 +81,7 @@ namespace Clave1_Grupo1
             // 
             this.cbTipo.ForeColor = System.Drawing.Color.DimGray;
             this.cbTipo.FormattingEnabled = true;
-            this.cbTipo.Location = new System.Drawing.Point(28, 97);
+            this.cbTipo.Location = new System.Drawing.Point(28, 121);
             this.cbTipo.Name = "cbTipo";
             this.cbTipo.Size = new System.Drawing.Size(169, 21);
             this.cbTipo.TabIndex = 86;
@@ -99,7 +101,7 @@ namespace Clave1_Grupo1
             // 
             this.cbSonido.ForeColor = System.Drawing.Color.DimGray;
             this.cbSonido.FormattingEnabled = true;
-            this.cbSonido.Location = new System.Drawing.Point(28, 334);
+            this.cbSonido.Location = new System.Drawing.Point(28, 338);
             this.cbSonido.Name = "cbSonido";
             this.cbSonido.Size = new System.Drawing.Size(169, 21);
             this.cbSonido.TabIndex = 84;
@@ -109,7 +111,7 @@ namespace Clave1_Grupo1
             // 
             this.cbIluminacion.ForeColor = System.Drawing.Color.DimGray;
             this.cbIluminacion.FormattingEnabled = true;
-            this.cbIluminacion.Location = new System.Drawing.Point(28, 291);
+            this.cbIluminacion.Location = new System.Drawing.Point(28, 299);
             this.cbIluminacion.Name = "cbIluminacion";
             this.cbIluminacion.Size = new System.Drawing.Size(169, 21);
             this.cbIluminacion.TabIndex = 83;
@@ -118,7 +120,7 @@ namespace Clave1_Grupo1
             // txtDistribucion
             // 
             this.txtDistribucion.ForeColor = System.Drawing.Color.DimGray;
-            this.txtDistribucion.Location = new System.Drawing.Point(28, 253);
+            this.txtDistribucion.Location = new System.Drawing.Point(28, 260);
             this.txtDistribucion.Name = "txtDistribucion";
             this.txtDistribucion.Size = new System.Drawing.Size(169, 20);
             this.txtDistribucion.TabIndex = 82;
@@ -128,7 +130,7 @@ namespace Clave1_Grupo1
             // 
             this.cbDisponibilidad.ForeColor = System.Drawing.Color.DimGray;
             this.cbDisponibilidad.FormattingEnabled = true;
-            this.cbDisponibilidad.Location = new System.Drawing.Point(28, 53);
+            this.cbDisponibilidad.Location = new System.Drawing.Point(28, 80);
             this.cbDisponibilidad.Name = "cbDisponibilidad";
             this.cbDisponibilidad.Size = new System.Drawing.Size(169, 21);
             this.cbDisponibilidad.TabIndex = 81;
@@ -154,17 +156,17 @@ namespace Clave1_Grupo1
             // txtDireccion
             // 
             this.txtDireccion.ForeColor = System.Drawing.Color.DimGray;
-            this.txtDireccion.Location = new System.Drawing.Point(28, 176);
+            this.txtDireccion.Location = new System.Drawing.Point(28, 200);
             this.txtDireccion.Multiline = true;
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(169, 57);
+            this.txtDireccion.Size = new System.Drawing.Size(169, 41);
             this.txtDireccion.TabIndex = 4;
             this.txtDireccion.Text = "Direccion";
             // 
             // txtCapacidad
             // 
             this.txtCapacidad.ForeColor = System.Drawing.Color.DimGray;
-            this.txtCapacidad.Location = new System.Drawing.Point(28, 136);
+            this.txtCapacidad.Location = new System.Drawing.Point(28, 162);
             this.txtCapacidad.Name = "txtCapacidad";
             this.txtCapacidad.Size = new System.Drawing.Size(169, 20);
             this.txtCapacidad.TabIndex = 3;
@@ -173,7 +175,7 @@ namespace Clave1_Grupo1
             // txtNombreL
             // 
             this.txtNombreL.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombreL.Location = new System.Drawing.Point(28, 12);
+            this.txtNombreL.Location = new System.Drawing.Point(28, 39);
             this.txtNombreL.Name = "txtNombreL";
             this.txtNombreL.Size = new System.Drawing.Size(169, 20);
             this.txtNombreL.TabIndex = 1;
@@ -226,6 +228,16 @@ namespace Clave1_Grupo1
             this.btnActualizarL.Text = "ACTUALIZAR LOCALES";
             this.btnActualizarL.UseVisualStyleBackColor = false;
             // 
+            // txtId_locales
+            // 
+            this.txtId_locales.ForeColor = System.Drawing.Color.DimGray;
+            this.txtId_locales.Location = new System.Drawing.Point(28, 3);
+            this.txtId_locales.Name = "txtId_locales";
+            this.txtId_locales.ReadOnly = true;
+            this.txtId_locales.Size = new System.Drawing.Size(169, 20);
+            this.txtId_locales.TabIndex = 87;
+            this.txtId_locales.Text = "Id";
+            // 
             // Locales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -263,5 +275,6 @@ namespace Clave1_Grupo1
         private System.Windows.Forms.Panel paneldiseño1;
         private System.Windows.Forms.Button btnEliminarL;
         private System.Windows.Forms.Button btnActualizarL;
+        private System.Windows.Forms.TextBox txtId_locales;
     }
 }

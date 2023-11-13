@@ -59,5 +59,143 @@ namespace Clave1_Grupo1
             // Asigna el costo total al campo costo_final
             txtCosto.Text = costoTotal.ToString("C"); // Formatea como moneda
         }
+
+        private void cbLocal_enter(object sender, EventArgs e)
+        {
+            if (cbLocal.Text == "Tipo de local")
+            {
+                cbLocal.Text = "";
+                cbLocal.ForeColor = Color.Black;
+            }
+        }
+
+        private void cbArtista_enter(object sender, EventArgs e)
+        {
+            if (cbArtista.Text == "Artista")
+            {
+                cbArtista.Text = "";
+                cbArtista.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtCapacidad_enter(object sender, EventArgs e)
+        {
+            if (txtCapacidad.Text == "Capacidad máxima")
+            {
+                txtCapacidad.Text = "";
+                txtCapacidad.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtCosto_enter(object sender, EventArgs e)
+        {
+            if (txtCosto.Text == "Costo total")
+            {
+                txtCosto.Text = "";
+                txtCosto.ForeColor = Color.Black;
+            }
+        }
+
+        private void cbUsuario_enter(object sender, EventArgs e)
+        {
+            if (cbUsuario.Text == "Usuario")
+            {
+                cbUsuario.Text = "";
+                cbUsuario.ForeColor = Color.Black;
+            }
+        }
+
+        private void cbLocal_leave(object sender, EventArgs e)
+        {
+            if (cbLocal.Text == "")
+            {
+                cbLocal.Text = "Tipo de local";
+                cbLocal.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void cbArtista_leave(object sender, EventArgs e)
+        {
+            if (cbArtista.Text == "")
+            {
+                cbArtista.Text = "Artista";
+                cbArtista.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void txtCapacidad_leave(object sender, EventArgs e)
+        {
+            if (txtCapacidad.Text == "")
+            {
+                txtCapacidad.Text = "Capacidad máxima";
+                txtCapacidad.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void txtCosto_leave(object sender, EventArgs e)
+        {
+            if (txtCosto.Text == "")
+            {
+                txtCosto.Text = "Costo total";
+                txtCosto.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void cbUsuario_leave(object sender, EventArgs e)
+        {
+            if (cbUsuario.Text == "")
+            {
+                cbUsuario.Text = "Usuario";
+                cbUsuario.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void cbLocal_keypress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else if (Char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else if (Char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void cbArtista_keypress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else if (Char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else if (Char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void cbUsuario_keypress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else if (Char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else if (Char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

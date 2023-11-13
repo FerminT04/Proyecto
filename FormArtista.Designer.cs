@@ -137,7 +137,6 @@ namespace Clave1_Grupo1
             this.btnEliminarA.TabIndex = 79;
             this.btnEliminarA.Text = "ELIMINAR ARTISTA";
             this.btnEliminarA.UseVisualStyleBackColor = false;
-            this.btnEliminarA.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnEliminarA_MouseClick);
             // 
             // btnActualizarA
             // 
